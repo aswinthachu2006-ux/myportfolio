@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arun Kumar — Python Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Arun Kumar</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme" type="button" aria-label="Toggle dark mode">Theme</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <h1>I build backends, APIs and data tools in Python.</h1>
+    <p>Python developer with 4 years of experience shipping reliable web services, automation scripts and data pipelines.</p>
+    <a class="btn primary" href="#projects">See my projects</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+    <div class="terminal mono" aria-label="Short code sample">
+      <span class="p">&gt;&gt;&gt;</span> <span id="typed"></span><span class="cursor"></span>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I like clean code, good tests and APIs that other developers enjoy using. I work mostly with Django, FastAPI and PostgreSQL, and I automate anything I have to do twice.</p>
+    <ul class="skills">
+      <li>Python</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>PostgreSQL</li>
+      <li>pandas</li><li>pytest</li><li>Docker</li><li>Git</li><li>REST APIs</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="web" aria-pressed="false">Web</button>
+      <button type="button" data-filter="data" aria-pressed="false">Data</button>
+      <button type="button" data-filter="tool" aria-pressed="false">Tools</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-type="web">
+        <h3>TaskFlow API</h3>
+        <p>REST API for team task tracking with JWT login and role-based access.</p>
+        <div class="tags mono">FastAPI · PostgreSQL · Docker</div>
+      </article>
+      <article class="card" data-type="web">
+        <h3>Shopkeeper</h3>
+        <p>Small e-commerce site with cart, orders and an admin dashboard.</p>
+        <div class="tags mono">Django · Stripe · Redis</div>
+      </article>
+      <article class="card" data-type="data">
+        <h3>Sales Insights</h3>
+        <p>Pipeline that cleans monthly sales files and builds summary charts.</p>
+        <div class="tags mono">pandas · Matplotlib</div>
+      </article>
+      <article class="card" data-type="tool">
+        <h3>FileSorter CLI</h3>
+        <p>Command-line tool that sorts messy folders by file type and date.</p>
+        <div class="tags mono">argparse · pathlib</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li><strong>Python Developer, Example Tech</strong><span>2024 – Present</span>
+        Build and maintain internal APIs used by three product teams.</li>
+      <li><strong>Junior Developer, Sample Systems</strong><span>2022 – 2024</span>
+        Wrote automation scripts and Django features; raised test coverage to 85%.</li>
+      <li><strong>B.E. Computer Science</strong><span>2018 – 2022</span>
+        Graduated with a focus on software engineering.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="form" novalidate>
+      <div><label for="name">Name</label><input id="name" required></div>
+      <div><label for="email">Email</label><input id="email" type="email" required></div>
+      <div><label for="text">Message</label><textarea id="text" rows="4" required></textarea></div>
+      <button type="submit">Send message</button>
+      <p id="msg" role="status"></p>
+    </form>
+    <p>Or find me on <a href="https://github.com/" rel="noopener">GitHub</a> and <a href="https://linkedin.com/" rel="noopener">LinkedIn</a>.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Arun Kumar. Built with plain HTML, CSS and JavaScript.</div></footer>
+<script src="script.js" defer></script>
